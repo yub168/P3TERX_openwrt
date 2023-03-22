@@ -14,7 +14,8 @@
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
-echo 'src-git autotimeset  https://github.com/sirpdboy/luci-app-autotimeset' >> feeds.conf.default
+#无法添加包autotimeset
+#echo 'src-git autotimeset  https://github.com/sirpdboy/luci-app-autotimeset' >> feeds.conf.default
