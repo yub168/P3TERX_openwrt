@@ -80,6 +80,7 @@ jobs:
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
         cd openwrt
+        [ -e zzz-default-settings ] && mv -f /home/yub168/lede/package/lean/default-settings/files/
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
     - name: SSH connection to Actions
