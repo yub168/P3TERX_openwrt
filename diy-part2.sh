@@ -36,4 +36,4 @@ sed -i 's/16384/65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 #修改wan口为pppoe 增加拨号账号与密码
 sed -i 's/2:-dhcp/2:-pppoe/g' package/base-files/files/lib/functions/uci-defaults.sh
 sed -i 's/username=\'username\'/username=\'yub168\'/g' package/base-files/files/bin/config_generate
-sed -i 's/password=\'password\'/password=\'yb790913\'/g' package/base-files/files/bin/config_generate
+sed -i 's/password=\'password\'/password=\'yb790913\'/g package/base-files/files/bin/config_generate
